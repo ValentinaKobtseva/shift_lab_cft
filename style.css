@@ -1,0 +1,116 @@
+.container {
+    width: fit-content;
+    margin: 0 auto;
+    height: 450px;
+    color: white;
+    background: rgb(129,63,251);
+    background: radial-gradient(circle, rgba(129,63,251,1) 0%, rgba(252,70,175,0.916579131652661) 100%);
+    border-radius: 10px;
+    font-family: "Candara Light"
+}
+
+.heading{
+    font-size: 30px;
+    margin-left: 15px;
+    padding-top: 15px;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.table{
+    margin: 5px;
+    max-width: 1600px;
+    text-align: center;
+    /*border: 15px solid #dee2f3;*/
+    /*border-radius: 10px;*/
+    /*background: #ffffff;*/
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: block;
+    text-align: center;
+}
+
+#input-id{
+    width: 630px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.81);
+}
+
+.button{
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 1s;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 31%, rgba(0,212,255,1) 95%);
+}
+
+span {
+    display: none;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 18px;
+    width: 120px;
+    transition: 1s;
+    font-weight: bold;
+}
+
+.title:hover {
+    width: 170px;
+}
+
+.column {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.column div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(83, 82, 84, 0.5);
+    /*border-radius: 2px;*/
+    cursor: pointer;
+}
+
+.searched {
+    background-color: #ab2b2b !important;
+    color: white;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 420px) {
+    .table {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        height: fit-content;
+    }
+
+    .column .title {
+        display: none;
+    }
+
+    span {
+        display: block;
+    }
+
+    .column {
+        display: block;
+    }
+}
